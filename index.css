@@ -2,9 +2,10 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 .container {
-  border: 1px solid gray;
   width: 375px;
   height: 812px;
   display: flex;
