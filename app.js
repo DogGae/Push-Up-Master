@@ -8,16 +8,27 @@ timerButton.addEventListener("click", () => {
 let min = 0;
 let sec = 0;
 
-startTimer = () => {
+const startTimer = () => {
   setInterval(function () {
     sec++;
     if (sec == 60) {
       min++;
       sec = 0;
     }
-    const timerCount = `${min < 10 ? "0" + min : min}:${
-      sec < 10 ? "0" + sec : sec
-    }`;
+    let timerCount = min + ":" + sec;
+
+    if (min < 10) {
+      timerCount = "0" + min;
+    } else {
+      timerCount = min;
+    }
+
+    if (sec < 10) {
+      timerCount = "0" + min + ":" + "0" + sec;
+    } else {
+      timerCount = "0" + min + ":" + sec;
+    }
+
     timer.innerHTML = timerCount;
   }, 1000);
 };
