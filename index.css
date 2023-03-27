@@ -52,7 +52,7 @@ body {
   font-size: 18px;
   font-weight: 700;
 }
-.push_up_button_active {
+.active {
   width: 320px;
   height: 44px;
   background-color: #cd3700;
