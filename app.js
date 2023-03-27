@@ -15,7 +15,6 @@ const startTimer = () => {
       min++;
       sec = 0;
     }
-    let timerCount = min + ":" + sec;
 
     if (min < 10) {
       timerCount = "0" + min;
@@ -24,9 +23,9 @@ const startTimer = () => {
     }
 
     if (sec < 10) {
-      timerCount = "0" + min + ":" + "0" + sec;
+      timerCount += ":" + "0" + sec;
     } else {
-      timerCount = "0" + min + ":" + sec;
+      timerCount += ":" + sec;
     }
 
     timer.innerHTML = timerCount;
