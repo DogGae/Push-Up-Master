@@ -1,9 +1,27 @@
 const timer = document.querySelector(".timer");
 const timerButton = document.querySelector(".push_up_button");
+const pushUpImg = document.querySelector(".push_up_img");
+const attetion = document.querySelector(".attetion");
+const severalTime = document.querySelector(".several_time");
 
 timerButton.addEventListener("click", () => {
   startTimer();
+  pushUpImg.src = "/img/push-up-active.gif";
+  attetion.innerHTML = "아직 멀었어!";
+  severalCount();
+  severalTime.innerHTML = count + "개!";
+  timerButton.classList.add("active");
+  timerButton.innerHTML = "완료";
 });
+
+let count = 0;
+
+const severalCount = () => {
+  setInterval(function () {
+    count++;
+    severalTime.innerHTML = count + "개!";
+  }, 5000);
+};
 
 let min = 0;
 let sec = 0;
