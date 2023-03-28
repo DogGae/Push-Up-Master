@@ -8,9 +8,9 @@ severalTime.innerHTML = timerButton.addEventListener("click", () => {
   if (!timerButton.classList.contains("active")) {
     severalTime.innerHTML = count + "개!";
     startTimer();
+    severalCount();
     pushUpImg.src = "/img/push-up-active.gif";
     attetion.innerHTML = "아직 멀었어!";
-    severalCount();
     timerButton.innerHTML = "완료";
     timerButton.classList.add("active");
   } else {
@@ -20,6 +20,7 @@ severalTime.innerHTML = timerButton.addEventListener("click", () => {
     timerButton.innerHTML = "시작";
     pushUpImg.src = "/img/22917-pushup 1.png";
     attetion.innerHTML = "최고 기록";
+    severalTime.innerHTML = count + "개";
 
     if (count > bestRecord) {
       bestRecord = count;
