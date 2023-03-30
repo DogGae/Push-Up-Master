@@ -22,7 +22,7 @@
       "type": "image/png"
     }
   ],
-  "icons": [{ "icons": [
+  "icons": [
     {
       "src": "windows11/SmallTile.scale-100.png",
       "sizes": "71x71"
@@ -471,7 +471,7 @@
       "src": "ios/1024.png",
       "sizes": "1024x1024"
     }
-  ]}],
+  ],
   "shortcuts": [
     {
       "name": "pushup",
