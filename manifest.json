@@ -7,7 +7,7 @@
   "orientation": "any",
   "scope": "/",
   "short_name": "PushUpMaster",
-  "start_url": "/",
+  "start_url": "https://creative-jelly-14e88d.netlify.app/",
   "theme_color": "#ffffff",
   "categories": [],
   "screenshots": [
