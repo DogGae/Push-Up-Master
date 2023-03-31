@@ -17,8 +17,6 @@
     }
   ],
   "icons": [
-   
-    
     {
       "src": "AppImages/windows11/Square150x150Logo.scale-400.png",
       "sizes": "600x600"
@@ -54,9 +52,15 @@
   ],
   "shortcuts": [
     {
-      "name": "pushup",
+      "name": "PushUpMaster",
       "url": "https://creative-jelly-14e88d.netlify.app/",
-      "description": "pushup"
+      "description": "pushup",
+      "icons" : [
+        {
+          "src" :"AppImages/android/android-launchericon-192-192.png",
+          "sizes": "192x192"
+        }
+      ]
     }
   ]
 }
