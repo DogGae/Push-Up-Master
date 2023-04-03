@@ -1,0 +1,87 @@
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.container {
+  display: flex;
+  width: 375px;
+  height: 812px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.container-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.main-title {
+  display: flex;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 24px;
+  justify-content: center;
+  color: #1d1617;
+  margin-top: 41px;
+  margin-bottom: 36px;
+}
+.item-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.item-container {
+  width: 315px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid gray;
+  justify-content: space-between;
+}
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.healthimg {
+  width: 36px;
+  height: 36px;
+  padding-right: 12px;
+}
+.health-name {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.bestrecord {
+  font-weight: 400;
+  font-size: 10px;
+  color: #7b6f72;
+}
+.remove {
+  width: 16px;
+  height: 16px;
+}
+
+.addhealth {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #cd3700;
+  width: 320.74px;
+  height: 44px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 1000px;
+  margin-bottom: 37px;
+}
