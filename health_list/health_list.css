@@ -67,6 +67,11 @@ body {
   font-size: 10px;
   color: #7b6f72;
 }
+.remove_btn {
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+}
 .remove {
   width: 16px;
   height: 16px;
@@ -75,8 +80,10 @@ body {
 .addhealth {
   display: flex;
   align-items: center;
+  border: none;
   justify-content: center;
   background-color: #cd3700;
+  cursor: pointer;
   width: 320.74px;
   height: 44px;
   color: #fff;
