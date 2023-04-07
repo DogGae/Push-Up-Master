@@ -4,8 +4,9 @@ const pushUpImg = document.querySelector(".push_up_img");
 const attention = document.querySelector(".attention");
 const severalTime = document.querySelector(".several_time");
 let bestRecord = localStorage.getItem("bestRecord");
+pushUpImg.src = "/img/22917-pushup 1.png";
 
-severalTime.innerText = timerButton.addEventListener("click", () => {
+const timerButtonHandler = () => {
   if (!timerButton.classList.contains("active")) {
     severalTime.innerText = count + "개!";
     startTimer();
@@ -21,9 +22,12 @@ severalTime.innerText = timerButton.addEventListener("click", () => {
     timerButton.innerText = "시작";
     pushUpImg.src = "/img/22917-pushup 1.png";
     attention.innerText = "최고 기록";
-
     severalTime.innerText = bestRecord + "개";
   }
+};
+
+timerButton.addEventListener("click", () => {
+  timerButtonHandler();
 });
 
 let count = 0;
@@ -69,6 +73,7 @@ const stopTimer = () => {
   count = 0;
   timer.innerText = "00:00";
 };
+
 const saveRecord = () => {
   if (count > bestRecord) {
     bestRecord = count;
