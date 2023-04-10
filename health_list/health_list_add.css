@@ -87,7 +87,8 @@ body {
   padding-top: 21px;
   gap: 34px;
 }
-.counter_button {
+.counter_button_up,
+.counter_button_down {
   border: none;
   width: 32px;
   height: 32px;
@@ -105,7 +106,6 @@ body {
   height: 102px;
   resize: none;
   padding: 12px;
-
   background-color: #f7f7f7;
   color: #7b6f72;
   font-weight: 400;

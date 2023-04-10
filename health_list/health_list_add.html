@@ -30,14 +30,19 @@
         <div class="countInterval">
           카운트 간격
           <div class="counter">
-            <button class="counter_button"><</button>
-            <div>5</div>
-            <button class="counter_button">></button>
+            <button class="counter_button_down"><</button>
+            <div class="counter_value">5</div>
+            <button class="counter_button_up">></button>
           </div>
         </div>
         <div class="progressive_phrase_box">
           진행 문구
-          <textarea class="progressive_phrase">ex: 아직 멀었어!</textarea>
+          <textarea
+            class="progressive_phrase"
+            placeholder="ex: 아직 멀었어!"
+            maxlength="50"
+            minlength="1"
+          ></textarea>
         </div>
       </div>
       <div class="button_box">
@@ -45,5 +50,6 @@
         <button class="accept_button">완료</button>
       </div>
     </div>
+    <script src="/health_list/health_list_add.js"></script>
   </body>
 </html>
