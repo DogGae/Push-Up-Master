@@ -15,15 +15,31 @@
         </div>
         <div class="health_imgbox">
           <div class="health_img">
-            <div class="health_img_before">
-              <img src="/img/Subtract.png" alt="" />
-            </div>
+            <label for="beforeFileInput">
+              <div class="health_img_before">
+                <img src="/img/Subtract.png" />
+                <input
+                  class="img_input"
+                  type="file"
+                  id="beforeFileInput"
+                  accept=".png,.jpg,.jpeg,.webp"
+                />
+              </div>
+            </label>
             시작 전
           </div>
           <div class="health_img">
-            <div class="health_img_after">
-              <img src="/img/Stop_and_play_fill.png" alt="" />
-            </div>
+            <label for="afterFileInput">
+              <div class="health_img_after">
+                <img src="/img/Stop_and_play_fill.png" alt="" />
+                <input
+                  class="img_input"
+                  type="file"
+                  id="afterFileInput"
+                  accept=".gif"
+                />
+              </div>
+            </label>
             시작 후
           </div>
         </div>
