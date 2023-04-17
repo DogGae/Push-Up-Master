@@ -4,7 +4,11 @@ const counterDown = document.querySelector(".counter_button_down");
 const beforeFileInput = document.querySelector("#beforeFileInput");
 beforeFileInput.addEventListener("change", beforeImgHandler);
 const afterFileInput = document.querySelector("#afterFileInput");
+const beforeImg = document.querySelector(".before_img");
+const afterImg = document.querySelector(".after_img");
 afterFileInput.addEventListener("change", afterImgHandler);
+const confirmButton = document.querySelector(".accept_button");
+const progressPhrase = document.querySelector(".progressive_phrase");
 
 counterUp.addEventListener("click", () => {
   let counter = parseInt(counterValue.innerText);
@@ -42,3 +46,22 @@ function afterImgHandler(e) {
     box.classList.add("active");
   };
 }
+
+confirmButton.addEventListener("click", () => {
+  let exerciseName = window.prompt("이름을 입력하세요");
+  const confirmed = window.confirm("운동을 추가하시겠습니까?");
+
+  const saveToLocalStorage = () => {
+    localStorage.setItem("saveData", JSON.stringify(data));
+  };
+  const data = {
+    name: exerciseName,
+    beforeStartImage: beforeImg.src,
+    afterStartVideo: afterImg.src,
+    progressPhrase: progressPhrase.value,
+    secondsPerCount: counterValue.textContent,
+  };
+  if (confirmed) {
+    saveToLocalStorage();
+  }
+});

@@ -4,7 +4,7 @@
   "dir": "ltr",
   "display": "standalone",
   "name": "PushUpMaster",
-  "orientation": "any",
+  "orientation": "portrait",
   "scope": "/",
   "short_name": "PushUpMaster",
   "start_url": "https://creative-jelly-14e88d.netlify.app/",
@@ -12,8 +12,8 @@
   "categories": [],
   "screenshots": [
     {
-      "src":"/maskable_icon_x512.png"  ,
-      "size" : "512x512"
+      "src": "/maskable_icon_x512.png",
+      "size": "512x512"
     }
   ],
   "icons": [
@@ -55,9 +55,9 @@
       "name": "PushUpMaster",
       "url": "https://creative-jelly-14e88d.netlify.app/",
       "description": "pushup",
-      "icons" : [
+      "icons": [
         {
-          "src" :"AppImages/android/android-launchericon-192-192.png",
+          "src": "AppImages/android/android-launchericon-192-192.png",
           "sizes": "192x192"
         }
       ]
