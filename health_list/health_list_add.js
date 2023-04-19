@@ -48,20 +48,22 @@ function afterImgHandler(e) {
 }
 
 confirmButton.addEventListener("click", () => {
-  let exerciseName = window.prompt("이름을 입력하세요");
+  const exerciseName = window.prompt("이름을 입력하세요");
   const confirmed = window.confirm("운동을 추가하시겠습니까?");
 
-  const saveToLocalStorage = () => {
-    localStorage.setItem("saveData", JSON.stringify(data));
-  };
-  const data = {
-    name: exerciseName,
-    beforeStartImage: beforeImg.src,
-    afterStartVideo: afterImg.src,
-    progressPhrase: progressPhrase.value,
-    secondsPerCount: counterValue.textContent,
-  };
   if (confirmed) {
-    saveToLocalStorage();
+    const data = {
+      name: exerciseName,
+      beforeStartImage: beforeImg.src,
+      afterStartVideo: afterImg.src,
+      progressPhrase: progressPhrase.value,
+      secondsPerCount: counterValue.textContent,
+    };
+    const saveToLocalStorage = (data) => {
+      localStorage.setItem("saveData", JSON.stringify(data));
+    };
+    const storedData = JSON.parse(localStorage.getItem("saveData")) || [];
+    storedData.push(data);
+    saveToLocalStorage(storedData);
   }
 });
