@@ -38,20 +38,26 @@ body {
   flex-direction: column;
   justify-content: flex-start;
 }
+.item-containers {
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+}
 .item-container {
   width: 315px;
   display: flex;
-  align-items: center;
+  justify-content: start;
   border-bottom: 1px solid gray;
-  justify-content: space-between;
+  flex-direction: column;
 }
 .item {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: space-around;
   padding-top: 16px;
   padding-bottom: 16px;
 }
+
 .healthimg {
   width: 36px;
   height: 36px;
@@ -61,6 +67,9 @@ body {
   display: flex;
   flex-direction: column;
   gap: 5px;
+  padding-right: 125px;
+  font-weight: 500;
+  font-size: 12px;
 }
 .bestrecord {
   font-weight: 400;
@@ -75,6 +84,14 @@ body {
 .remove {
   width: 16px;
   height: 16px;
+}
+.emptyList {
+  padding-top: 230px;
+  height: 18px;
+  font-size: 18px;
+  font-weight: 500;
+  font-style: normal;
+  color: #1d1617;
 }
 
 .addhealth {

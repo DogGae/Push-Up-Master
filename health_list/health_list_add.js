@@ -65,5 +65,6 @@ confirmButton.addEventListener("click", () => {
     const storedData = JSON.parse(localStorage.getItem("saveData")) || [];
     storedData.push(data);
     saveToLocalStorage(storedData);
+    console.log(storedData);
   }
 });
