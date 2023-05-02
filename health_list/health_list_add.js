@@ -58,6 +58,7 @@ confirmButton.addEventListener("click", () => {
       afterStartVideo: afterImg.src,
       progressPhrase: progressPhrase.value,
       secondsPerCount: counterValue.textContent,
+      id: Date.now(),
     };
     const saveToLocalStorage = (data) => {
       localStorage.setItem("saveData", JSON.stringify(data));
