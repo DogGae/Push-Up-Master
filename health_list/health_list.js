@@ -6,10 +6,11 @@ const getExerciseList = () => {
     return JSON.parse(storedData);
   }
 };
+
 const displayExercise = () => {
   const exerciseList = getExerciseList();
 
-  if (!exerciseList) {
+  if (!exerciseList || exerciseList.length === 0) {
     const emptyItem = document.createElement("div");
     emptyItem.classList.add("emptyList");
     emptyItem.innerText = `
@@ -34,8 +35,18 @@ const displayExercise = () => {
         <img class="remove" src="/img/Remove.png" alt="Remove" />
       </button>
     `;
+
       exerciseContainer.appendChild(exerciseItem);
       exerciseListContainer.appendChild(exerciseContainer);
+    });
+    const removeButton = document.querySelectorAll(".remove_btn");
+    removeButton.forEach((button, index) => {
+      button.addEventListener("click", (e) => {
+        const itemContainer = e.target.closest(".item-container");
+        itemContainer.remove();
+        exerciseList.splice(index, 1);
+        localStorage.setItem("saveData", JSON.stringify(exerciseList));
+      });
     });
   }
 };
